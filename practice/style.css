@@ -1,0 +1,29 @@
+p {
+    color: rgb(207, 207, 207);
+    font-size: 25px;
+    font-family: Helvetica;
+}
+
+#notecard-img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+body {
+    background-color: black;
+    font-family: sans-serif ;
+}
+
+h1 {
+    color: white;
+}
+
+#note {
+    background-color: grey;
+    width: 500px;
+    margin: 200px auto 200px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
