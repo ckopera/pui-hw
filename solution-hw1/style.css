@@ -75,7 +75,14 @@
     margin: 30px 0px 30px 0px;
 }
 
-.dropDownMenu {
+#glazingDropDown {
+    margin-top: 10px;
+    width: 178px;
+    height: 35px;
+    border: 2px solid black;
+}
+
+#packSizeDropDown {
     margin-top: 10px;
     width: 178px;
     height: 35px;

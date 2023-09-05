@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Item Page</title>
 </head>
   
 <body>
-  <a href="homepage.html"><img src="../assets/logo/logo-01.svg" width="400px"/></a>
+  <a href="homepage.html"><img src="../assets/logo/logo-01.svg" alt="Bun Bake Shop logo" width="400"></a>
 
     <div class="line"></div>
     <div class="header-align">
@@ -17,31 +17,29 @@
     </div>
   
     <p class="slogan">Original Cinnamon Roll</p> 
-    </div>
     
   <div class="productItem">
-    <img src="../assets/products/original-cinnamon-roll.jpg" width="600px" class="image">
+    <img src="../assets/products/original-cinnamon-roll.jpg" alt ="original cinnamon roll photo" width="600" class="image">
     <div class="productDescription">
       <p>Customize our delicious, <br> hand-made cinammon roll to <br> your liking!</p>
 
 <!-- drop down for glazing -->
       <div class="dropDown">
-        <label for="glazing">Glazing:</label>
+        <label for="glazingDropDown">Glazing:</label>
         <br>
-        <select name="glazing" class="dropDownMenu">
+        <select name="glazing" id="glazingDropDown">
         <option value="keep_original">Keep original</option>
         <option value="sugar_milk">Sugar milk</option>
         <option value="vanilla_milk">Vanilla milk</option>
         <option value="double_chocolate">Double chocolate</option>
         </select>
       </div>
-      <br>
 
-  <!-- drop down for pack size -->
+<!-- drop down for pack size -->
       <div class="dropDown">
-        <label for="pack_size">Pack size:</label>
+        <label for="packSizeDropDown">Pack size:</label>
         <br>
-        <select name="packSize" class="dropDownMenu">
+        <select name="packSize" id="packSizeDropDown">
         <option value="1">1</option>
         <option value="3">3</option>
         <option value="6">6</option>
