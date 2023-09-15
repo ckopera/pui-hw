@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>My Cart</title>
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+          <a href="homepage.html"><img src="../assets/logo/logo-01.svg" alt="Bun Bake Shop logo" width="400"></a>
+        </div>
+      
+        <!-- Nav menu -->
+        <nav class="header-align">
+          <nav class="headerFlex">
+            <p><a class="header2" href="homepage.html">PRODUCTS</a></p>
+            <p><a class="header1" href="cartpage.html">CART</a></p>
+          </nav>
+          <hr class="navLine">
+          <!-- Page header with slogan -->
+          <p class="slogan">Shopping cart</p> 
+        </nav>
+      </header>
+
+<!-- Cart items -->
+    <div class="productItem">
+        <!-- Item 1 image, description, and price -->
+        <div class="cartCard">
+            <div class="cartImage">
+                <img src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll photo" class="image" width="150">
+                <p class="remove">Remove</p>
+            </div>
+            <div class="cartDescription">
+                <p>Original Cinnamon Roll<br>Glazing: Keep Original<br>Pack Size: 1</p>
+            </div>
+            <div class="cartPrice">
+                <p>$2.49</p>
+            </div>
+        </div>
+    
+        <!-- Item 2 image, description, and price -->
+        <div class="cartCard">
+            <div class="cartImage">
+                <img src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="double chocolate cinnamon roll photo" class="image" width="150">
+                <p class="remove">Remove</p>
+            </div>
+            <div class="cartDescription">
+                <p>Double Chocolate Cinnamon Roll<br>Glazing: Sugar milk<br>Pack Size: 6</p>
+            </div>
+            <div class="cartPrice">
+                <p>$27.45</p>
+            </div>
+        </div>
+        <hr class="checkoutLine">
+    </div>
+  
+    <!-- Line, subtotal, checkout button -->
+    <div class="totalPrice">
+        <div class="Total">
+            <p>Total</p>
+        </div>
+        <div class="checkoutPrice">
+            <p>$29.94</p>
+        </div>
+    </div>
+    <button class="checkoutButton">Checkout</button>
+</body>
+</html>
