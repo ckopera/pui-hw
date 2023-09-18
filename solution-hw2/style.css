@@ -16,6 +16,16 @@ a {
 
 /* NAVIGATION MENU */
 
+.navLine {
+    border-bottom: 3px solid black;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.logo {
+    display: block;
+}
+
 .slogan {
     font-size: 30px;
     margin-top: 70px;
@@ -49,6 +59,10 @@ a {
     font-size: 20px;
 }
 
+header {
+    display: flex;
+}
+
 /* HOMEPAGE */
 .product {
     text-align: left;
@@ -71,7 +85,6 @@ a {
     background-color: yellow;
     cursor: pointer;
     font-weight: bold;
-    padding-bottom: -10px;
 }
 
 .image {
@@ -186,7 +199,6 @@ select {
 }
 
 .checkoutButton {
-    display: inline-block;
     margin: auto;
     font-weight: bold;
     border: 2px solid black;
@@ -195,20 +207,6 @@ select {
     text-align: center;
     float: right;
     margin-right: 20px;
-}
-
-.navLine {
-    border-bottom: 3px solid black;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.logo {
-    display: block;
-}
-
-header {
-    display: flex;
 }
 
 .productDetail {
