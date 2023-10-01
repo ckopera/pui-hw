@@ -91,6 +91,7 @@ class Roll {
 const addToCart = document.querySelector('.button');
 addToCart.addEventListener("click", createNewRoll);
 
+/* function to load roll type and quantity based on user selection */
 function createNewRoll(){
     const glazingIndex = document.getElementById('glazingDropDown').options.selectedIndex;
     const rollGlazing = document.getElementById('glazingDropDown').options[glazingIndex].innerHTML;
