@@ -38,6 +38,23 @@ body {
   /* padding: 0px 20px; */
 }
 
+/* For screens that have a width of 769px or above (laptops/desktops), apply
+    this rule... */
+@media (min-width: 769px) {
+  /* For larger screens (bigger than tablets) we expand the container width. */
+  #container {
+    width: 720px;
+  }
+}
+
+/* For screens that have a width of 520px or below (mobile) apply this rule: */
+@media (max-width: 520px) {
+  #container {
+    width: auto;
+    padding: 0px 20px;
+  }
+}
+
 /* ---------- HEADER -------------------------------------------------------- */
 
 /* This element contains our logo image and header text. It is fixed at the
@@ -67,6 +84,11 @@ header {
   background-color: #191919;
 }
 
+@media (max-width: 520px) {
+  header {
+    width: calc(100% - 40px);
+  }
+}
 
 /* This rule applies to <h1> elements that are children of <header>. (In other
     words, our "PUI-NOTE" header text.)

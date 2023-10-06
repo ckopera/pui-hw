@@ -5,6 +5,8 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title>PUI-NOTE Exercise 5</title>
+
     <!-- Our application uses the fonts "Roboto" and "Roboto Mono". These are
       not installed on every computer, so we link to them (from Google Fonts)
       in the section below. -->
@@ -24,7 +26,7 @@
     <link rel="stylesheet" href="css/notecard.css">
     <link rel="stylesheet" href="css/editor.css">
 
-    <!-- Add external JS file -->
+    <!-- Include our multiple JS files -->
     <script defer src="js/app.js"></script>
 
   </head>
@@ -42,58 +44,60 @@
 
       <div id="notecard-list">
 
-        <div class="notecard expanded" id="notecard-one">
-          
-          <div class="notecard-left">
+
+          <div class="notecard expanded">
             
-            <div class="notecard-main-content">
-              <img class="notecard-thumbnail" src="assets/warhol-zebra.png"/>
-              <div class="notecard-text">
-                <div class="note-title-container">
-                  <div class="note-title">
-                    Placeholder Title
+            <div class="notecard-left">
+              
+              <div class="notecard-main-content">
+                <img class="notecard-thumbnail" src="assets/warhol-zebra.png"/>
+                <div class="notecard-text">
+                  <div class="note-title-container">
+                    <div class="note-title">
+                      Placeholder Title
+                    </div>
+                  </div>
+                  <div class="note-body">
+                    Here is some placeholder body text.
                   </div>
                 </div>
-                <div class="note-body">
-                  Here is some placeholder body text.
+              </div>
+
+              <div class="notecard-footer">
+                Aug 8 2022, 11:09
+              </div>
+
+            </div> <!-- END notecard-left -->
+
+
+            <div class="notecard-right">
+
+              <div class="icon icon-expand material-symbols-outlined">
+                expand_more
+              </div>
+              <div class="icon icon-collapse material-symbols-outlined">
+                expand_less
+              </div>
+
+              <div class="toolbar">
+                <div class="material-symbols-outlined icon icon-edit">
+                  edit
+                </div>
+                <div class="material-symbols-outlined icon icon-delete">
+                  delete
                 </div>
               </div>
-            </div>
-
-            <div class="notecard-footer">
-              Aug 8 2022, 11:09
-            </div>
-
-          </div> <!-- END notecard-left -->
+            </div> <!-- END notecard-right -->
 
 
-          <div class="notecard-right">
+          </div> <!-- END notecard -->
 
-            <div class="icon icon-expand material-symbols-outlined">
-              expand_more
-            </div>
-            <div class="icon icon-collapse material-symbols-outlined">
-              expand_less
-            </div>
-
-            <div class="toolbar">
-              <div class="material-symbols-outlined icon icon-edit">
-                edit
-              </div>
-              <div class="material-symbols-outlined icon icon-delete">
-                delete
-              </div>
-            </div>
-          </div> <!-- END notecard-right -->
-
-
-        </div> <!-- END notecard -->
 
 
       </div> <!-- END notecard-list -->
 
 
-      <div id="note-editor" class="edit-mode">
+      <div id="note-editor" class="">
         
         <div id="btn-new-note">
         </div>
@@ -101,6 +105,10 @@
         <div class="note-editor-contents">
 
           <div class="note-editor-left">
+
+            <div class="note-editor-img">
+              <img id="note-editor-image" src="assets/warhol-tiger.png"></img>
+            </div>
 
             <form>
               <input id="note-editor-title" placeholder="Title of Your Note..."
@@ -112,6 +120,9 @@
           </div>
 
           <div class="note-editor-right">
+            <div class="material-symbols-outlined icon icon-cancel">
+              close
+            </div>
             <div class="material-symbols-outlined icon icon-done">
               done
             </div>

@@ -9,7 +9,8 @@
   display: flex;
   
   /* Set default width for the notecard (this will be the width when notecards
-    are all in a single column). */
+    are all in a single column). For larger screens, we adjust this width, see
+    the @media query below. */
   /* width: 450px; */
   width: 100%; 
   
@@ -27,6 +28,17 @@
   
   /* Notecard background is slightly lighter than the webpage background. */
   background-color: #212121;
+}
+  
+/* For larger screen sizes (769px and above) we change the notecard width. We
+  actually make the notecards a bit smaller, but since we also make the
+  #container element larger, there will now be two notecards per row, instead
+  of just one notecard per row.
+*/
+@media (min-width: 769px) {
+  .notecard {
+    width: 310px;
+  }
 }
 
 /* The right side of the notecard will contain the expand/collpase icon and the
@@ -59,6 +71,12 @@ is in a separate div. */
   /* This div has two children, "notecard-thumbnail" and "notecard-text". By
     default, we would like these child elements to be on the same line, so we
     make the parent element ("notecard-main-content") a flexbox.
+    
+    However! For certain screen sizes (two notecards per row), we would like
+    the "notecard-text" div to be positioned below the "notecard-thumbnail"
+    element (on a a new line). To achieve this, we add the flex-wrap: wrap
+    property, and change the width of the "notecard-text" div with a
+    @media query (see notecard-text style, later in this stylesheet.)
   */
   display: flex;
   flex-wrap: wrap;
@@ -67,6 +85,14 @@ is in a separate div. */
     state). If the content expands beyond 75px (for example, when the user
     clicks the "expand" icon), the height will adjust automatically. */
   min-height: 75px;
+  }
+
+  /* TODO: add comments */
+  @media (min-width: 769px) {
+  .notecard-main-content {
+    align-content: flex-start;
+    min-height: 190px;
+  }
 }
 
 
@@ -83,6 +109,14 @@ is in a separate div. */
 
   /* Add some rounded corners to the image. */
   border-radius: 5px;
+}
+
+/* For larger screen sizes, we will use a larger animal image (100x100 px). */
+@media (min-width: 769px) {
+  .notecard-thumbnail {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 
@@ -102,6 +136,19 @@ is in a separate div. */
 
 }
 
+/* For larger screens, we want the title and body text to be on a new line,
+    below the animal image. We set the width to be 100% of the parent div. Then,
+    because of the "flex-wrap: wrap" property in the parent
+    (.notecard-main-content), the .notecard-text div is pushed onto a new line.
+*/
+@media (min-width: 769px) {
+  .notecard-text {
+    width: 100%;
+    margin-left: 0px; /* Remove the left margin. */
+  }
+}
+
+
 
 .note-title-container {
   height: 42px;
@@ -109,6 +156,12 @@ is in a separate div. */
   margin-bottom: 10px;
   display: flex;
 
+}
+@media (min-width: 769px) {
+.note-title-container {
+  height: auto;
+  margin-top: 20px;
+}
 }
 
 
@@ -143,6 +196,12 @@ max-height: 16px;
 .expanded .note-body {
 min-height: 36px;
 max-height: none;
+}
+
+@media (min-width: 769px) {
+.expanded .note-body {
+  min-height: 56px;
+}
 }
 
 .notecard-footer {

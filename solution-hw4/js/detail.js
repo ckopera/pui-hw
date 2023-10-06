@@ -72,7 +72,7 @@ rollImage.src = '../assets/products/' + rolls[rollType].imageFile;
 
 /* Changing price on each different item page */
 const priceUpdate = document.getElementById('price');
-priceUpdate.innerHTML = '$' + rolls[rollType].basePrice;
+priceUpdate.innerHTML = '$' + rolls[rollType].basePrice;   
 
 
 /* Add to cart function */
