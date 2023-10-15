@@ -1,0 +1,252 @@
+/* General Style */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+* {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* NAVIGATION MENU */
+
+.navLine {
+    border-bottom: 3px solid black;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.logo {
+    display: block;
+}
+
+.slogan {
+    font-size: 30px;
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-bottom: 70px;
+}
+
+.header-align{
+    flex-grow: 1;
+}
+
+.headerFlex {
+    display: flex;
+    justify-content: right;
+    margin: 20px 20px;
+}
+
+.header1 {
+    display: inline;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 50px;
+    background-color: yellow;
+    font-size: 20px;
+}
+
+.header2 {
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+}
+
+/* HOMEPAGE */
+.product {
+    text-align: left;
+    width: 285px;
+    margin: auto;
+    display: block;
+    padding: 10px;
+}
+
+.productName {
+    margin: auto;
+    text-decoration-line: underline;
+}
+
+.productPrice {
+    margin: auto;
+}
+
+.product:hover {
+    background-color: yellow;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.image {
+    text-align: center;
+    border: 3px solid black;
+}
+
+.grid1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.grid2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    font-size: 20px;
+}
+
+.notBold {
+    font-weight: normal;
+}
+
+/* ITEM PAGE */
+
+.dropDown {
+    margin: 30px 0px 30px 0px;
+}
+
+select {
+    margin-top: 10px;
+    width: 255px;
+    height: auto;
+    border: 2px solid black;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#price {
+    display: inline-flex;
+    text-align: right;
+    margin: auto;
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    margin: 0px 0px 0px 25px;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: yellow;  
+    padding: 6px 16px; 
+    text-align: center;
+    font-size: 20px;
+    width: 150px;
+    
+}
+
+.productDescriptionContent {
+    margin-bottom: 50px;
+}
+
+.buttonDiv {
+    margin-top: 100px;
+    width: 255px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.imageAlign {
+    text-align: center;
+    width: 285px;
+}
+
+/* CART  */
+
+.remove {
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.cartDescription {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 10px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    width: 550px;
+}
+
+#cartElement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cartPrice {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding-bottom: 50px;
+    margin-right: 20px;
+}
+
+.totalPrice {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 620px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.checkoutButton {
+    margin: auto;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: yellow;  
+    padding: 6px 16px; 
+    text-align: center;
+    float: right;
+    margin-right: 20px;
+}
+
+.productDetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.productItem {
+    display: flex;
+    flex-direction: column;
+    margin-left: 420px;
+}
+
+.cartCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartImage {
+    display: flex;
+    flex-direction: column;
+}
+
+.productDescription {
+    margin-left: 50px;
+} 
+
+.checkoutLine {
+    border-bottom: 3px solid black;
+    width: 100%;
+}
